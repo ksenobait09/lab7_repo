@@ -19,5 +19,10 @@ from lab6.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^books', main, name='main'),
+    url(r'^books$', main, name='main'),
+    url(r'^signup$', signup, name='signup'),
+    url(r'^signin$', signin, name='signin'),
+    url(r'^logout$', logout, name='logout'),
+    url(r'^success$', success, name='success'),
+    url(r'^booksModel$', booksModel, name='booksModel'),
 ]
